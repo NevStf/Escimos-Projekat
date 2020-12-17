@@ -11,33 +11,8 @@ fun unsigned f2() {
 
 fun unsigned ff(unsigned x) {
     unsigned y;
-    return x + f2() - y; //f2++() takodje ne radi kao i f2()++ , return y++ radi
+    return x + f2() - y;
 }
-
-/* ne radi ako vacant vraca tip
-fun vacant funkcija(int x) {
-return x;
-} 
-*/
-
-/* provera za void i return ; , radi
- fun vacant fff() {
-
-return ; } */
-
-/* baca warning 
-fun int fff(int x) { 
-return ;
-} */
-
-fun int funkcija(int a, unsigned b) { 
-	
-	return a;
-} 
-
-
-
-//fun int a++() { } <- ne moze increment na funckiju 
 
 fun int main() {
     int a;
@@ -50,24 +25,15 @@ fun int main() {
     unsigned w;
     unsigned uu;
     unsigned ww;
+    int z;	
+    int t;
+	t++;
+	z = a++ - c + bb;	
 	
-    // a = funkcija(, 3u); poziv funckije 2 parametara, radi sve 
-
-    
-    //int o++; ne radi test ok 
-    int s;
-    s = 2/0;
-   
-    a = funkcija(2, 3u) / s;
-
 
     //poziv funkcije
     a = f(3);
-    a++;
-   //kad pozovem f++ to radi i baca error na test jer je f nedefinisan
-   // f++;
-
-  
+   
     //if iskaz sa else delom
     if (a < b)  //1
         a = 1;
@@ -105,9 +71,6 @@ fun int main() {
     if (a + c == b - +4)    //7
         a = 1;
 
-
-    a = b++ + a + c;
-
-    return 0;
+return 0;
 }
 

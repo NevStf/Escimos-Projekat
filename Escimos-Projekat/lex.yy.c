@@ -543,13 +543,14 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "semantic.l"
-#line 4 "semantic.l"
+#line 1 "Escimos.l"
+#line 4 "Escimos.l"
    #include <string.h>
-   #include "semantic.tab.h"
+   #include "Escimos.tab.h"
    #include "defs.h"
-#line 552 "lex.yy.c"
+   extern YYSTYPE yylval;
 #line 553 "lex.yy.c"
+#line 554 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -766,10 +767,10 @@ YY_DECL
 		}
 
 	{
-#line 9 "semantic.l"
+#line 10 "Escimos.l"
 
 
-#line 773 "lex.yy.c"
+#line 774 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -839,196 +840,196 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 11 "semantic.l"
+#line 12 "Escimos.l"
 { /* skip */ }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 14 "semantic.l"
+#line 15 "Escimos.l"
 { yylval.i = INT;  return _TYPE; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 15 "semantic.l"
+#line 16 "Escimos.l"
 { yylval.i = UINT; return _TYPE; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 16 "semantic.l"
+#line 17 "Escimos.l"
 { yylval.i = VACANT; return _TYPE; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 17 "semantic.l"
+#line 18 "Escimos.l"
 { return _IF; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 18 "semantic.l"
+#line 19 "Escimos.l"
 { return _ELSE; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 19 "semantic.l"
+#line 20 "Escimos.l"
 { return _RETURN; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 20 "semantic.l"
+#line 21 "Escimos.l"
 { return _FUN; } 
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 21 "semantic.l"
+#line 22 "Escimos.l"
 { return _PARA; } 
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 22 "semantic.l"
+#line 23 "Escimos.l"
 { return _SWITCH; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 23 "semantic.l"
+#line 24 "Escimos.l"
 { return _BREAK; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 24 "semantic.l"
+#line 25 "Escimos.l"
 { return _OTHERWISE; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 25 "semantic.l"
+#line 26 "Escimos.l"
 { return _CASE; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 27 "semantic.l"
+#line 28 "Escimos.l"
 { return _LPAREN; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 28 "semantic.l"
+#line 29 "Escimos.l"
 { return _RPAREN; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 29 "semantic.l"
+#line 30 "Escimos.l"
 { return _LBRACKET; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 30 "semantic.l"
+#line 31 "Escimos.l"
 { return _RBRACKET; }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 31 "semantic.l"
+#line 32 "Escimos.l"
 { return _SEMICOLON; }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 32 "semantic.l"
+#line 33 "Escimos.l"
 { return _ASSIGN; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 33 "semantic.l"
+#line 34 "Escimos.l"
 { return _COMMA; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 34 "semantic.l"
+#line 35 "Escimos.l"
 { return _INC; }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 35 "semantic.l"
+#line 36 "Escimos.l"
 { return _COLON; }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 36 "semantic.l"
+#line 37 "Escimos.l"
 { return _POINTER; } 
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 38 "semantic.l"
+#line 41 "Escimos.l"
 { yylval.i = ADD; return _AROP; }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 39 "semantic.l"
+#line 42 "Escimos.l"
 { yylval.i = SUB; return _AROP; }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 40 "semantic.l"
+#line 43 "Escimos.l"
 { yylval.i = MUL; return _AROP; }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 41 "semantic.l"
+#line 44 "Escimos.l"
 { yylval.i = DIV; return _AROP; }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 44 "semantic.l"
+#line 47 "Escimos.l"
 { yylval.i = LT; return _RELOP; }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 45 "semantic.l"
+#line 48 "Escimos.l"
 { yylval.i = GT; return _RELOP; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 46 "semantic.l"
+#line 49 "Escimos.l"
 { yylval.i = LE; return _RELOP; }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 47 "semantic.l"
+#line 50 "Escimos.l"
 { yylval.i = GE; return _RELOP; }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 48 "semantic.l"
+#line 51 "Escimos.l"
 { yylval.i = EQ; return _RELOP; }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 49 "semantic.l"
+#line 52 "Escimos.l"
 { yylval.i = NE; return _RELOP; }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 51 "semantic.l"
+#line 54 "Escimos.l"
 { yylval.s = strdup(yytext); 
                        return _ID; }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 53 "semantic.l"
+#line 56 "Escimos.l"
 { yylval.s = strdup(yytext); 
                        return _INT_NUMBER;}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 55 "semantic.l"
+#line 58 "Escimos.l"
 { yylval.s = strdup(yytext); 
                        yylval.s[yyleng-1] = 0;
                        return _UINT_NUMBER;}
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 59 "semantic.l"
+#line 62 "Escimos.l"
 { /* skip */ }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 62 "semantic.l"
+#line 65 "Escimos.l"
 { /*blok komentar, stackoverflow*/
        int c1 = 0, c2 = input();
        for(;;) {
@@ -1042,15 +1043,15 @@ YY_RULE_SETUP
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 73 "semantic.l"
+#line 76 "Escimos.l"
 { printf("line %d: LEXICAL ERROR on char %c\n", yylineno, *yytext);}
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 74 "semantic.l"
+#line 77 "Escimos.l"
 ECHO;
 	YY_BREAK
-#line 1054 "lex.yy.c"
+#line 1055 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2067,6 +2068,6 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 74 "semantic.l"
+#line 77 "Escimos.l"
 
 

@@ -1,5 +1,7 @@
 //OPIS: ponovljena promenljiva
-int main() {
+fun int main() {
     int a,b,c,d,e,f,b,g;
+
+return 0;
 }
 
